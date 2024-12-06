@@ -6,11 +6,23 @@
 - add the below code in there 
 
 
-
 - here we are using the docker images only 
 - this is with shared runner 
 - how to do in self hosted runner ?
 - 
+
+```
+```
+AFTER THE CODE IS BUILD
+- get the token from the cicd setting --> variables
+- on the docker server 
+- token=<paste the token here>
+- echo $token | docker login $CI_REGISTRY -u $CI_REGISTRY_USER --password-stdin
+- echo $token | docker login <container_register_values> -u <name given for the token creation> --password-stdin
+- now we are logged in 
+- go to the container register in the gitlab 
+- select the image <copy the image name with copy mark>
+- docker pull <paste it here>
 
 ```
 --------------------------------------
