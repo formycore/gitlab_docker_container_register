@@ -1,8 +1,14 @@
 # gitlab docker container registry
 ```
+- clone the https://github.com/spring-projects/spring-petclinic
+- we need to create a Dockerfile
+
+
+
 - here we are using the docker images only 
 - this is with shared runner 
 - how to do in self hosted runner ?
+- 
 
 ```
 --------------------------------------
@@ -32,7 +38,7 @@ mvn_build:
 	- CI_REGISTRY
 - value
 	- registry.gitlab.com/awssandeepchary1/spring-petclinic
-- full project name
+- full project name (registry.<gitlab project name>)
 - we need user and password
 - gitlab user icon -> preferences -> Access Tokens -> 
 - for now enable all the check list
