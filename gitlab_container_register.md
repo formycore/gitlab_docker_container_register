@@ -2,6 +2,8 @@
 ```
 - clone the https://github.com/spring-projects/spring-petclinic
 - we need to create a Dockerfile
+- we need to add the .gitlab-ci.yml 
+- add the below code in there 
 
 
 
